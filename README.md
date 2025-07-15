@@ -1,2 +1,0 @@
-# TechInfo
-Technical Infomation

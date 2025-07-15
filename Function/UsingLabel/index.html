@@ -1,0 +1,576 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../LogSetting/">
+      
+      
+      <link rel="icon" href="../../img/favicon2.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>ラベル印字機能 - オンラインマニュアルサンプル</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="green" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="オンラインマニュアルサンプル" class="md-header__button md-logo" aria-label="オンラインマニュアルサンプル" data-md-component="logo">
+      
+  <img src="../../img/favicon2.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            オンラインマニュアルサンプル
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ラベル印字機能
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="オンラインマニュアルサンプル" class="md-nav__button md-logo" aria-label="オンラインマニュアルサンプル" data-md-component="logo">
+      
+  <img src="../../img/favicon2.ico" alt="logo">
+
+    </a>
+    オンラインマニュアルサンプル
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ホーム
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    設置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ■ 機能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            ■ 機能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    ラベル印字機能
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    ラベル印字機能
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      アプリの入手
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ラベルファイルの構造
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ラベルファイルの利用手順
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LogSetting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ログファイル出力機能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">ラベル印字機能<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>ライブラリでは、SII Layout Editorで作成したラベルファイル(*.slex)の印字ができます。<br />
+また、ラベルファイルを利用し、テキスト、イメージ及びバーコードデータの置き換えを行い、印字できる機能を提供します。<br />
+SII Layout Editorはラベル作成ができるソフトウェアです。以降「アプリ」と称します。<br />
+アプリはストアで入手することが可能です。<br /></p>
+<h3 id="_2">アプリの入手<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>iOSまたはAndroid<br />
+QRコードをスマートフォンで読み取ってストアへ移動すると、アプリをインストールできます。<br /></p>
+<div class="admonition 参考 note">
+<p class="admonition-title">参考</p>
+<p>・App Store、Google PlayまたはMicrosoft Storeに移動して、「SII Layout Editor」を検索、インストールすることも可能です。</p>
+</div>
+<h3 id="_3">ラベルファイルの構造<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>ラベルファイルは、ラベルの印字可能領域内にオブジェクトを配置したファイルです。<br /></p>
+<p><img alt="LabelFunction_01" src="../../img/LabelFunction_01.png" /></p>
+<p><br />
+ラベルファイル (*.slex)の例<br /></p>
+<p>(1) ラベルファイルをライブラリで印字する際の注意点<br /></p>
+<p>アプリを使用したラベルファイルの印字とライブラリを使用したラベルファイルの印字では印字結果が異なる場合がありますので、実機にて事前に確認してください。<br />
+ライブラリを使用してラベルファイルを印字する際は、下記の点にご注意ください。<br /></p>
+<ol>
+<li>全てのオブジェクト<ul>
+<li>印字可能領域外に配置されたオブジェクトの描画はサポートしていません。</li>
+</ul>
+</li>
+<li>テキストオブジェクト<ul>
+<li>「連続番号」はサポートしていません。</li>
+<li>アプリと同一のフォントを利用する場合はXcodeプロジェクトにカスタムフォントを追加してください。カスタムフォントがない場合、テキストデータはシステム標準のフォントで印字します。</li>
+</ul>
+</li>
+<li>イメージオブジェクト<ul>
+<li>ディザリングの設定が「バークス」または「ベイヤー」の場合、ライブラリでは「フロイド・スタンバーグ」となります。</li>
+</ul>
+</li>
+<li>バーコードオブジェクト<ul>
+<li>アプリでサポートするバーコードのうち、ライブラリでは下記のバーコードをサポートしています。<ul>
+<li>CODE39</li>
+<li>CODE128</li>
+<li>UPC-A</li>
+<li>EAN13</li>
+<li>CODABAR</li>
+<li>UPC-E</li>
+<li>EAN8</li>
+<li>PDF417</li>
+<li>Data Matrix</li>
+<li>QRコード</li>
+</ul>
+</li>
+<li>「連続番号」はサポートしていません。</li>
+<li>バー幅の比率設定は反映しません。</li>
+<li>アプリで生成されるバーコードイメージとライブラリで生成するバーコードイメージは同一バーコードイメージにはならない場合があります。</li>
+<li>アプリでバーコードオブジェクトの高さをバー高さより小さく指定した場合、ライブラリではバーコードはオブジェクト内に収まるように縮小して印字します。</li>
+<li>アプリでPDF417の「セキュリティ」を-1に設定した場合、ライブラリではセキュリティレベルを0固定で描画します。</li>
+<li>アプリと同一のフォントを利用する場合はXcodeプロジェクトにカスタムフォントを追加してください。カスタムフォントがない場合、テキストデータはシステム標準のフォントで印字します。</li>
+</ul>
+</li>
+<li>図オブジェクト<ul>
+<li>「線の太さ」が細い場合、破線・長破線・二重線の印字が潰れる可能性があります。</li>
+<li>アプリとライブラリでの図オブジェクトの描画位置が異なる場合があります。</li>
+</ul>
+</li>
+<li>連絡帳オブジェクト<ul>
+<li>アプリと同一のフォントを利用する場合はXcodeプロジェクトにカスタムフォントを追加してください。カスタムフォントがない場合、テキストデータはシステム標準のフォントで印字します。</li>
+</ul>
+</li>
+<li>日付と時刻オブジェクト<ul>
+<li>アプリと同一のフォントを利用する場合はXcodeプロジェクトにカスタムフォントを追加してください。カスタムフォントがない場合、テキストデータはシステム標準のフォントで印字します。<br />
+ </li>
+</ul>
+</li>
+</ol>
+<h3 id="_4">ラベルファイルの利用手順<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>ラベルファイルを利用した印字手順を下記に示します。<br /></p>
+<p>(1) ラベルファイルをそのままライブラリから印字する場合<br /></p>
+<ol>
+<li style="list-style-type: none;">印字命令例
+  <ol style="list-style-type: none;">
+  <li>①  ラベルファイルの指定</li>
+  <li>②  ラベルの印字</li>
+  </ol>
+</li>
+</ol>
+
+<p>(2) ラベルファイルのオブジェクトデータを置換して印字する場合<br /></p>
+<ol>
+<li style="list-style-type: none;">印字命令例
+  <ol style="list-style-type: none;">
+  <li>①  ラベルファイルの指定</li>
+  <li>②  ラベルのテキストデータの置換 (テキストオブジェクト ID=1)</li>
+  <li>③  ラベルのイメージデータの置換 (イメージオブジェクト ID=1)</li>
+  <li>④  ラベルのバーコードデータの置換 (バーコードオブジェクト ID=1)</li>
+  <li>⑤  ラベルの印字</li>
+  </ol>
+</li>
+</ol>
+
+<p><img alt="LabelFunction_02" src="../../img/LabelFunction_02.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy 2025 Seiko Instruments Inc.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "toc.integrate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
